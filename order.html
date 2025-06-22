@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Coffee</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #2e2e2e;
+    }
+    .order-form {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 30px;
+      background: #444;
+      border-radius: 10px;
+      color: white;
+    }
+    .order-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .order-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .order-form input, .order-form select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+    .order-form button {
+      width: 100%;
+      padding: 12px;
+      background: #d2691e;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="order-form">
+    <h2>Order Coffee</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="type">Select Coffee:</label>
+      <select id="type">
+        <option>Espresso</option>
+        <option>Cappuccino</option>
+        <option>Latte</option>
+        <option>Americano</option>
+      </select>
+
+      <label for="size">Size:</label>
+      <select id="size">
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+      </select>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
